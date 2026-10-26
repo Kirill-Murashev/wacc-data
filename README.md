@@ -20,12 +20,14 @@ Each folder has the same two subfolders:
 | `data/` | datasets used in the paper's calculations, in open formats (CSV, JSON) |
 | `metadata/` | provenance: source, URL, retrieval date, checksums, processing notes |
 
+A paper folder may also have `appendices/`: the paper's electronic appendices (PDF and Word), linked from the paper's text.
+
 ## Principles
 
 - **Open sources only.** Every dataset is traceable to a publicly available source recorded in `metadata/`.
 - **Provenance and integrity.** Each file is listed with its source URL, retrieval date (UTC) and checksum.
 - **Third-party terms respected.** Where a provider's terms of use do not permit redistribution (e.g. vendor price series), only derived series needed to reproduce the published results are included, not the raw data. The source and how to obtain it are documented.
-- **No interpretation here.** Methods and conclusions are in the papers; this repository holds data and its documentation.
+- **No interpretation in the data.** Methods and conclusions are in the papers and their electronic appendices (`appendices/`); `data/` and `metadata/` hold data and its documentation only.
 
 ## Papers
 
